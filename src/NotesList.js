@@ -4,7 +4,7 @@ import Note from "./Note.js";
 const NotesList = (props) => {
   // filter notes data and keep only notes that are filtered to true
   const keepSearchMatches = (note) => note.doesMatchSearch;
-  // Of the notes filtered as true we pass the notes data into props below; the onType will pass changes to a note
+  // Of the notes filtered as true pass the notes data into props below; the onType will pass changes to a note
   const searchMatches = props.notes.filter(keepSearchMatches);
   const showNote = (note) => (
     <Note

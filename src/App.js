@@ -31,8 +31,8 @@ class App extends Component {
   // edit note text method
   onType = (editMeId, updatedKey, updatedValue) => {
     // editMeId == id of the note that is edited
-    // updatedKey == title or description field
-    // updatedValue == value of title or description
+    // updatedKey == title or description field that was changed
+    // updatedValue == value of title or description that was changed
     const updatedNotes = this.state.notes.map((note) => {
       if (note.id !== editMeId) {
         return note;

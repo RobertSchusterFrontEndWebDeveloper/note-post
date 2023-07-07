@@ -27,7 +27,6 @@ const Note = (props) => {
         placeholder="Title"
         className="note__title"
         value={props.note.title}
-        // onChange handler
         onChange={updateTitle}
       />
 
@@ -36,7 +35,6 @@ const Note = (props) => {
         placeholder="Description..."
         className="note__description"
         value={props.note.description}
-        // onChange handler
         onChange={updateDescription}
       />
       <span className="note__delete" onClick={clickDelete}>
